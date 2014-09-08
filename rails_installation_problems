@@ -1,0 +1,26 @@
+Problems occured when installing Ruby on Rails
+
+1. cannot access gem files due to permission
+solution: set environment variable GEM_HOME and GEM_PATH to "~/.gem"
+
+2. ERROR:  While executing gem ... (Errno::ENOENT)
+   No such file or directory - /home_directory/.gem/gems/i18n-0.6.11
+solution: not yet found
+
+
+Setting environment variables:
+
+vim ~/.bash_profile
+add variable by typing: export variable_name="variable_value"
+
+access by process.env.variable_name
+
+using bash commands:
+
+env | grep variable_name to check existance
+set variable_name
+remove by: unset variable_name
+
+setting $HOME: echo ${HOME:=desired_home_directory}
+
+this will bring you to the described home directory when cd is typed
